@@ -302,7 +302,7 @@ public class Player extends Creature {
 				if (isUsingSkill) {
 					e.hurt(30);
 				} else {
-					e.hurt(10);
+					e.hurt(30);
 				}
 				return;
 			}

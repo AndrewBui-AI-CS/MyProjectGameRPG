@@ -16,11 +16,13 @@ public class Assets {
 	// hình ảnh quái vật
 	public static BufferedImage[] monsterGoUP, monsterGoDown, monsterGoRight, monsterGoLeft;
 	public static BufferedImage[] monsterAttackUP, monsterAttackDown, monsterAttackRight, monsterAttackLeft;
-	public static BufferedImage[] menuImage, menuText, exitbutton, intro, lose , win;
+	public static BufferedImage[] menuImage, menuText, exitbutton, intro, lose , win, state1, state2;
 
 
 	public static void init() // load any image, sound, ...
 	{
+		state1 = new BufferedImage[1];
+		state2 = new BufferedImage[1];
 		menuImage = new BufferedImage[1];
 		menuText = new BufferedImage[2];
 		exitbutton = new BufferedImage[2];
@@ -52,7 +54,7 @@ public class Assets {
 		SpriteSheet sheet21 = new SpriteSheet(ImageLoader.loadImage("/textures/chestmana.png"));
 
 
-		SpriteSheet menusheet = new SpriteSheet(ImageLoader.loadImage("/textures/menu.gif"));
+		SpriteSheet menusheet = new SpriteSheet(ImageLoader.loadImage("/textures/menu.png"));
 		SpriteSheet textsheet1 =  new SpriteSheet(ImageLoader.loadImage("/textures/ngbutton1.png"));
 		SpriteSheet textsheet2 =  new SpriteSheet(ImageLoader.loadImage("/textures/ngbutton2.png"));
 		SpriteSheet exitbutton1 = new SpriteSheet(ImageLoader.loadImage("/textures/exitbutton1.png"));
@@ -61,6 +63,8 @@ public class Assets {
 		SpriteSheet intro2 = new SpriteSheet(ImageLoader.loadImage("/textures/intro1.png"));
 		SpriteSheet winSheet = new SpriteSheet(ImageLoader.loadImage("/textures/win.png"));
 		SpriteSheet loseSheet = new SpriteSheet(ImageLoader.loadImage("/textures/lose.png"));
+		SpriteSheet state1sheet = new SpriteSheet(ImageLoader.loadImage("/textures/state1.png"));
+		SpriteSheet state2sheet = new SpriteSheet(ImageLoader.loadImage("/textures/state2.png"));
 
 //		SpriteSheet sheet19 = new SpriteSheet(ImageLoader.loadImage("/textures/nendoi2.png"));
 //		SpriteSheet sheet20 = new SpriteSheet(ImageLoader.loadImage("/textures/nhadoi.png"));
@@ -185,7 +189,7 @@ public class Assets {
 		house1 = sheet17.crop(0, 0, 110, 90);
 		heal = sheet18.crop(0, 0, 207, 224);
 		mana = sheet19.crop(0, 0, 96, 118);
-		chestheal = sheet20.crop(0, 0, 94, 77);
+		chestheal = sheet20.crop(0, 0, 309, 310);
 		chestmana = sheet21.crop(0, 0, 92, 81);
 		button[0] = sheet5.crop(0, 0, 1024, 1024);
 		button[1] = sheet6.crop(0, 0, 860, 663);
@@ -203,6 +207,9 @@ public class Assets {
 		intro[1] = intro2.crop(0,0,765,495);
 		win[0] = winSheet.crop(0,0,3840,2160);
 		lose[0] = loseSheet.crop(0,0,1920,1200);
+		state1[0] = state1sheet.crop(0,0,800,600);
+		state2[0] = state2sheet.crop(0,0,800,600);
+
 
 		topScoreImage = sheet41.crop(0, 0, 1014, 452);
 

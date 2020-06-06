@@ -25,8 +25,9 @@ public class Game implements Runnable {
 	public State winState;
 	public State gameOverState;
 	public State Intro;
-	public State levelState;
+	public State levelState2;
 	public State scoreState;
+	public State levelState1;
 	// input
 	private KeyManager keyManager;
 	private MouseManager mouseManager;
@@ -59,9 +60,10 @@ public class Game implements Runnable {
 		menuState = new MenuState(handler);
 		winState = new WinState(handler);
 		gameOverState = new GameOverState(handler);
-		levelState = new LevelState(handler);
+		levelState2 = new LevelState2(handler);
 		scoreState = new ScoreState(handler);	
 		Intro = new Intro(handler);
+		levelState1 = new LevelState1(handler);
 		State.setState(Intro);
 	}
 

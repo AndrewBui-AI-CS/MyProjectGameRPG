@@ -6,8 +6,7 @@ import entities.Entity;
 import entities.EntityManager;
 import entities.creatures.Monsters;
 import entities.creatures.Player;
-import entities.statics.ChestHeal;
-import entities.statics.ChestMana;
+
 import tilegame.Handler;
 import tilegame.items.ItemManager;
 import tilegame.tiles.Tile;
@@ -32,18 +31,18 @@ public class World {
 		this.handler = handler;
 		
 		entityManager = new EntityManager(handler, new Player(handler, 100, 100),
-				new Monsters(handler, 150, 150));
-		entityManager.addEntity(new ChestMana(handler, 70, 210));
-		entityManager.addEntity(new ChestHeal(handler, 100, 320));
-		entityManager.addEntity(new ChestMana(handler, 600, 150));
-		entityManager.addEntity(new ChestHeal(handler, 512, 320));
-//		entityManager.addEntity(new ChestMana(handler, 800, 100));
-//		entityManager.addEntity(new ChestHeal(handler, 450, 300));
-//		entityManager.addEntity(new Monsters(handler, 350, 350));
+				new Monsters(handler, 736, 160));
+		//Da them trong GameState - Duc
+//		entityManager.addEntity(new ChestMana(handler, 76, 592));
+//		entityManager.addEntity(new ChestHeal(handler, 524, 464));
+//		entityManager.addEntity(new ChestMana(handler, 844, 720));
+//		entityManager.addEntity(new ChestHeal(handler, 844, 336));
+//
+//		entityManager.addEntity(new Monsters(handler, 350, 144));
 //		entityManager.addEntity(new Monsters(handler, 200, 200));
 //		entityManager.addEntity(new Monsters(handler, 400, 400));
 //		entityManager.addEntity(new Monsters(handler, 600, 600));
-		
+//		
 		itemManager = new ItemManager(handler);
 		// load mảng dữ liệu 
 		loadWorld(path);

@@ -150,7 +150,7 @@ public class Monsters extends Creature {
 			}
 			if (e.getCollisionBounds(0, 0).intersects(ar) && isCrazy) {
 				e.setBeingAttacked(true);
-				e.hurt(5);
+				e.hurt(3);
 				return;
 			}
 		}

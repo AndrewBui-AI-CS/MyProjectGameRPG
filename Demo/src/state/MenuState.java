@@ -31,10 +31,10 @@ public class MenuState extends State {
 			@Override
 			// click thì sẽ chuyển sang gameState
 			public void onClick() {
-				System.out.print("B");
+//				System.out.print("B");
 				// TODO Auto-generated method stub
 				handler.getGame().gameState = new GameState(handler);
-				State.setState(handler.getGame().gameState);
+				State.setState(handler.getGame().levelState1);
 			}
 		}));
 		uiManager.addObject(new UIImageButton(400 - 80, 450, 200, 50, Assets.exitbutton, new ClickListener() {

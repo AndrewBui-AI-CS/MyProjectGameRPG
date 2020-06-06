@@ -9,18 +9,18 @@ import tilegame.ui.ClickListener;
 import tilegame.ui.UIImageButton;
 import tilegame.ui.UIManager;
 
-public class LevelState extends State{
+public class LevelState2 extends State{
 	private UIManager uiManager;
 	// level demo
 	public int currentLevel = 2;
 	// timer
 	private long timer = 0;
 	// Khởi tạo
-	public LevelState(Handler handler) {
+	public LevelState2(Handler handler) {
 		super(handler);
 		uiManager = new UIManager(handler);
 		handler.getMouseManager().setUiManager(uiManager);
-		uiManager.addObject(new UIImageButton(300, 300, 64, 64, Assets.button, new ClickListener() {
+		uiManager.addObject(new UIImageButton(0, 0, 800, 600, Assets.state2, new ClickListener() {
 			@Override
 			// click thì sẽ chuyển sang gameState
 			public void onClick() {
@@ -46,13 +46,7 @@ public class LevelState extends State{
 	@Override
 	public void render(Graphics g) {
 		// TODO Auto-generated method stub
-		g.setColor(Color.GREEN);
-		g.fillRect(0, 0, 800, 600);
-		g.drawImage(Assets.topScoreImage, 0, 0, null);
-		g.fillRect(0, 0, 800, 600);
-		g.setColor(Color.YELLOW);
-		g.setFont(g.getFont().deriveFont(30.0f));
-		g.drawString("LEVEL : " + currentLevel, 300, 100);
+
 		uiManager.render(g);
 	}
 
