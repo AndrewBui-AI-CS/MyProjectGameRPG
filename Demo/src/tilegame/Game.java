@@ -2,6 +2,7 @@ package tilegame;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.util.logging.Level;
 
 import state.*;
 import tilegame.gfx.Assets;
@@ -28,6 +29,7 @@ public class Game implements Runnable {
 	public State levelState2;
 	public State scoreState;
 	public State levelState1;
+	public State levelSelect;
 	// input
 	private KeyManager keyManager;
 	private MouseManager mouseManager;
@@ -55,6 +57,7 @@ public class Game implements Runnable {
 		display.getCanvas().addMouseMotionListener(mouseManager); // muon cho chuot co the su dung ca tren frame va
 																	// canvas
 		Assets.init(); // khoi tao kho du lieu hinh anh, am thanh, ...
+		Assets.init(); // khoi tao kho du lieu hinh anh, am thanh, ...
 		handler = new Handler(this);
 		gameCamera = new GameCamera(handler, 0, 0);
 		menuState = new MenuState(handler);
@@ -64,6 +67,7 @@ public class Game implements Runnable {
 		scoreState = new ScoreState(handler);	
 		Intro = new Intro(handler);
 		levelState1 = new LevelState1(handler);
+		levelSelect = new LevelSelect(handler);
 		State.setState(Intro);
 	}
 
@@ -92,7 +96,6 @@ public class Game implements Runnable {
 		bs.show(); // need // khi bộ đệm đã sẵn sàng, tiến hành in hình ảnh, dữ liệu ra màn hình.
 		g.dispose(); // need // giải phóng graphics đã bị giữ lại trong bufferstrategy
 	}
-
 // run thread
 	public void run() {
 		init();
@@ -117,7 +120,7 @@ public class Game implements Runnable {
 
 	// synchronizing
 	// đồng bộ hóa luồng: chỉ cho phép một luồng được chạy, giúp giảm sai sót khi display dữ liệu
-	public synchronized void start() { // phuong thuc nay se duoc goi duy nhat trong class GameLauncher
+	public  void start() { // phuong thuc nay se duoc goi duy nhat trong class GameLauncher
 		if (running)
 			return; // neu game da run roi thi ko can start nua
 		running = true;
@@ -125,7 +128,7 @@ public class Game implements Runnable {
 		thread.start();
 	}
 
-	public synchronized void stop() {
+	public void stop() {
 		if (!running)
 			return; // neu game da dung thi ko can stop nua
 		running = false;

@@ -51,6 +51,9 @@ public class World {
 		entityManager.getPlayer().setY(spawnY);
 	}
 
+	public Player getPlayer(){
+		return entityManager.getPlayer();
+	}
 	// tick + render
 	public void tick() {
 		// update toàn bộ thực thể và các item đi kèm

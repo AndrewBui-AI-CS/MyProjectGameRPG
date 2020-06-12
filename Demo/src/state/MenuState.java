@@ -2,6 +2,7 @@ package state;
 
 import java.awt.Graphics;
 
+import tilegame.Game;
 import tilegame.Handler;
 import tilegame.gfx.Assets;
 import tilegame.ui.ClickListener;
@@ -21,9 +22,9 @@ public class MenuState extends State {
 		//them anh menu
 		uiManager.addObject(new UIImageButton(0, 0, 800, 600, Assets.menuImage, new ClickListener() {
 			@Override
-			// click thì sẽ chuyển sang gameState
 			public void onClick() {
 			}
+			// do nothing
 		}));
 
 		//them chu vao anh menu
@@ -31,10 +32,10 @@ public class MenuState extends State {
 			@Override
 			// click thì sẽ chuyển sang gameState
 			public void onClick() {
-//				System.out.print("B");
+				System.out.print("B");
 				// TODO Auto-generated method stub
-				handler.getGame().gameState = new GameState(handler);
-				State.setState(handler.getGame().levelState1);
+				Game.gameState = new GameState(handler);
+				State.setState(handler.getGame().levelSelect);
 			}
 		}));
 		uiManager.addObject(new UIImageButton(400 - 80, 450, 200, 50, Assets.exitbutton, new ClickListener() {

@@ -38,6 +38,8 @@ public class Player extends Creature {
 	public static final int vectorLEFT = 2;
 	public static final int vectorRIGHT = 3;
 	public static int vector = vectorRIGHT;
+
+
 	// bounds
 	private Rectangle ar;
 	// timer cho việc làm chậm đòn đánh, tg tick.
@@ -45,6 +47,9 @@ public class Player extends Creature {
 	private long timer2 = 0;
 	private long timer3 = 0;
 
+	public Rectangle getAr() {
+		return ar;
+	}
 	// khởi tạo
 	public Player(Handler handler, float x, float y) {
 		super(handler, x, y, 0, 0);
@@ -151,14 +156,18 @@ public class Player extends Creature {
 
 	// thay đổi move khi thao tác vs bàn phím
 	private void getInput() {
-		if (inventory.isActive())
+		if (inventory.isActive()){
+			System.out.println(x);
+			System.out.println(y);
 			return;
+		}
 		xMove = 0; // need
 		yMove = 0; // need
 		if (handler.getKeyManager().up) {
 			yMove = -speed;
 			isAttacking = false;
 			setVector(vectorUP);
+
 		}
 
 		if (handler.getKeyManager().down) {
@@ -182,6 +191,7 @@ public class Player extends Creature {
 			isUsingSkill = !isUsingSkill;
 			isAttacking = !isAttacking;
 		}
+
 
 	}
 
@@ -302,7 +312,7 @@ public class Player extends Creature {
 				if (isUsingSkill) {
 					e.hurt(30);
 				} else {
-					e.hurt(30);
+					e.hurt(10);
 				}
 				return;
 			}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cce6eb76-3bea-40cd-a389-67c2c44020da" name="Default Changelist" comment="" />
+    <list default="true" id="54231256-1924-4e34-b890-6ebfb4cb5f85" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +14,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1ctnv4XltxPlrDBaCcEMFHBv0Pb" />
+  <component name="ProjectId" id="1d48y0cXBbdxHQFNv5iv0FZURsg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -50,12 +51,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cce6eb76-3bea-40cd-a389-67c2c44020da" name="Default Changelist" comment="" />
-      <created>1591356985275</created>
+      <changelist id="54231256-1924-4e34-b890-6ebfb4cb5f85" name="Default Changelist" comment="" />
+      <created>1591673255281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591356985275</updated>
-      <workItem from="1591356989145" duration="2810000" />
+      <updated>1591673255281</updated>
+      <workItem from="1591673258833" duration="42000" />
+      <workItem from="1591673333402" duration="16074000" />
+      <workItem from="1591698358409" duration="2113000" />
+      <workItem from="1591704970831" duration="327000" />
+      <workItem from="1591705323374" duration="1570000" />
+      <workItem from="1591859447949" duration="1341000" />
+      <workItem from="1591876717701" duration="365000" />
     </task>
     <servers />
   </component>
@@ -63,33 +70,77 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1591357957676">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1591859730969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591357957676" />
-    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591357031370">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591859730969" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1591859492316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1591357031370" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1591360072591">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591859492316" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591673276353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591360072591" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1591360072591">
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1591673276353" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1591691880249">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591360072591" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1591360072591">
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591691880249" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1591860791212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591360072591" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1591360072591">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591860791212" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1591860791212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591360072591" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591356989116">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591860791212" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1591860791212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591356989116" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591860791212" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1591860791212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591860791212" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1591698245468">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591698245468" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1591698245467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591698245467" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1591698245466">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591698245466" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1591698245467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591698245467" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1591688012065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1591688012065" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591877043930">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591877043930" />
+    <state x="499" y="168" width="538" height="495" key="extract.method.dialog" timestamp="1591688008886">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="168" width="538" height="495" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1591688008886" />
+    <state x="209" y="33" key="new project wizard" timestamp="1591877081197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1591877081197" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1591674884314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591674884314" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591689493219">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591689493219" />
   </component>
 </project>

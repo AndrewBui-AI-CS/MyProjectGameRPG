@@ -4,7 +4,6 @@ import java.awt.Graphics;
 
 import javax.swing.JOptionPane;
 
-import entities.Entity;
 import entities.creatures.Monsters;
 import entities.statics.ChestHeal;
 import entities.statics.ChestMana;
@@ -24,6 +23,10 @@ public class GameState2 extends State {
 		super(handler);
 		world2 = new World(handler, "res/World/World2");
 		handler.setWorld(world2);
+		world2.getEntityManager().getMonsters().setHealth(100);
+		world2.getEntityManager().getMonsters().setSpeed(100);
+		world2.getEntityManager().getMonsters().hurt(10);
+		world2.getEntityManager().getPlayer().setSpeed(3.0f);
 		// add thêm monsters vào đây!
 		world2.getEntityManager().addEntity(new Monsters(handler, 288, 288));
 		world2.getEntityManager().addEntity(new Monsters(handler, 352, 672));
@@ -33,15 +36,6 @@ public class GameState2 extends State {
 		world2.getEntityManager().addEntity(new ChestHeal(handler, 268, 848));
 		world2.getEntityManager().addEntity(new ChestMana(handler, 588, 656));
 		world2.getEntityManager().addEntity(new ChestHeal(handler, 588, 336));
-		for(Entity e: world2.getEntityManager().getEntities())
-		{
-			if (e instanceof Monsters)
-			{
-				e.setHealth(150);
-				((Monsters) e).setSpeed(6.0f);
-				e.hurt(10);
-			}
-		}
 	}
 
 	// tick + render

@@ -17,7 +17,7 @@ public class Assets {
 	public static BufferedImage[] monsterGoUP, monsterGoDown, monsterGoRight, monsterGoLeft;
 	public static BufferedImage[] monsterAttackUP, monsterAttackDown, monsterAttackRight, monsterAttackLeft;
 	public static BufferedImage[] menuImage, menuText, exitbutton, intro, lose , win, state1, state2;
-
+	public static BufferedImage[] easy,hard;
 
 	public static void init() // load any image, sound, ...
 	{
@@ -29,8 +29,10 @@ public class Assets {
 		intro = new BufferedImage[2];
 		win = new BufferedImage[1];
 		lose = new BufferedImage[1];
-		
-		font28 = FontLoader.loadFont("res/fonts/slkscr.ttf", (int) 28); // load font có sẵn
+		easy = new BufferedImage[1];
+		hard = new BufferedImage[1];
+
+	font28 = FontLoader.loadFont("res/fonts/slkscr.ttf", (int) 28); // load font có sẵn
 		SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/textures/rock.png"));
 		SpriteSheet sheet2 = new SpriteSheet(ImageLoader.loadImage("/textures/grass.png"));
 		SpriteSheet sheet3 = new SpriteSheet(ImageLoader.loadImage("/textures/bui1.png"));
@@ -54,7 +56,7 @@ public class Assets {
 		SpriteSheet sheet21 = new SpriteSheet(ImageLoader.loadImage("/textures/chestmana.png"));
 
 
-		SpriteSheet menusheet = new SpriteSheet(ImageLoader.loadImage("/textures/menu.png"));
+		SpriteSheet menusheet = new SpriteSheet(ImageLoader.loadImage("/textures/menu.gif"));
 		SpriteSheet textsheet1 =  new SpriteSheet(ImageLoader.loadImage("/textures/ngbutton1.png"));
 		SpriteSheet textsheet2 =  new SpriteSheet(ImageLoader.loadImage("/textures/ngbutton2.png"));
 		SpriteSheet exitbutton1 = new SpriteSheet(ImageLoader.loadImage("/textures/exitbutton1.png"));
@@ -65,6 +67,8 @@ public class Assets {
 		SpriteSheet loseSheet = new SpriteSheet(ImageLoader.loadImage("/textures/lose.png"));
 		SpriteSheet state1sheet = new SpriteSheet(ImageLoader.loadImage("/textures/state1.png"));
 		SpriteSheet state2sheet = new SpriteSheet(ImageLoader.loadImage("/textures/state2.png"));
+		SpriteSheet easysheet = new SpriteSheet(ImageLoader.loadImage("/textures/easy1.png"));
+		SpriteSheet hardsheet = new SpriteSheet(ImageLoader.loadImage("/textures/hard1.png"));
 
 //		SpriteSheet sheet19 = new SpriteSheet(ImageLoader.loadImage("/textures/nendoi2.png"));
 //		SpriteSheet sheet20 = new SpriteSheet(ImageLoader.loadImage("/textures/nhadoi.png"));
@@ -209,8 +213,8 @@ public class Assets {
 		lose[0] = loseSheet.crop(0,0,1920,1200);
 		state1[0] = state1sheet.crop(0,0,800,600);
 		state2[0] = state2sheet.crop(0,0,800,600);
-
-
+		easy[0] = easysheet.crop(0,0,200,30);
+		hard[0] = hardsheet.crop(0,0,200,30);
 		topScoreImage = sheet41.crop(0, 0, 1014, 452);
 
 

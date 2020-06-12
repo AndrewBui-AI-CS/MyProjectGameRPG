@@ -1,13 +1,14 @@
 package state;
 
 import java.awt.Graphics;
+import java.util.ArrayList;
 
 import entities.creatures.Monsters;
 import entities.statics.ChestHeal;
 import entities.statics.ChestMana;
 import tilegame.Handler;
 import tilegame.worlds.World;
-
+import static entities.creatures.Monsters.aPath;
 public class GameState extends State{
 	// load world
 	private World world;
@@ -23,11 +24,23 @@ public class GameState extends State{
 		world.getEntityManager().addEntity(new ChestMana(handler, 844, 720));
 		world.getEntityManager().addEntity(new ChestHeal(handler, 844, 336));
 
-		world.getEntityManager().addEntity(new Monsters(handler, 92, 352));
-		world.getEntityManager().addEntity(new Monsters(handler, 288, 736));
+		Monsters monster =  new Monsters(handler, 200, 200);
+
+		//ArrayList<Integer> arrayList = aPath(world,monster,world.getPlayer());
+		//System.out.println((int)monster.getX()/64);
+		//System.out.println((int)monster.getY()/64);
+
+		/*for (int i:
+			arrayList ) {
+			System.out.println(i);
+
+
+		}*/
+		world.getEntityManager().addEntity(monster);
+
 		world.getEntityManager().addEntity(new Monsters(handler, 608, 672));
 
-		
+
 	}
 
 	// tick + render
